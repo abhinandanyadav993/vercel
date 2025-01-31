@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebrate the wedding of Parag & Sakshi with us. Join the festivities and share your blessings!">
+    <meta name="keywords" content="Parag Sakshi wedding, wedding countdown, wedding events, blessings, Agra wedding">
+    <title>Parag & Sakshi Wedding Invite</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f8e1e7, #eac0c6);
+            /*background-color: linear-gradient(135deg, #f7c8d8, #e2a5ab);*/
+            color: #5a3e2b;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .sparkling-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sparkle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    animation: sparkleAnimation 2s infinite;
+}
+
+@keyframes sparkleAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Background Overlay */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    padding: 10vh 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay for readability */
+}
+
+/* Title Styling */
+.wedding-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 2;
+    animation: glow 2s infinite alternate;
+}
+
+.wedding-title span {
+    color: #ffcc00; /* Gold color for names */
+}
+
+/* Subtitle (Tagline) */
+.wedding-tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #f5f5f5;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Glow Effect */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; }
+    100% { text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00; }
+}
+
+/* Countdown Timer */
+.countdown-timer {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+         .header {
+
+            height: 100vh;
+
+            background: url('https://drive.google.com/thumbnail?id=1Tj06YHpYH5YiLinZZagBDXUeFIfBgc2r') center/cover no-repeat;
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 0 20px;
+
+            overflow: hidden;
+
+        }
+
+        .header .overlay {
+
+            position: absolute;
+
+            top: 0; left: 0; width: 100%; height: 100%;
+
+            background: rgba(0, 0, 0, 0.3);
+
+            z-index: 1;
+
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-align : center;
+
+            /*font-size: 5em;*/
+
+            z-index: 2;
+
+            /*font-family: 'Cinzel Decorative', cursive;*/
+
+            margin-bottom: 20px;
+
+            animation: fadeIn 3s ease-out;
+
+        }
+
+        .header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-align : center;
+            z-index: 2;
+
+            /*font-family: 'Cinzel Decorative', cursive;*/
+
+            margin-bottom: 20px;
+
+            animation: fadeIn 3s ease-out;
+
+        }
+
+
+        .countdown {
+
+            font-size: 30px;
+
+            background: rgba(255, 255, 255, 0.6);
+
+            padding: 20px;
+
+            border-radius: 8px;
+
+            backdrop-filter: blur(5px);
+
+            z-index: 2;
+
+            animation: fadeInUp 2s ease-out;
+
+        }
+
+
+
+        /* Event Section */
+        .event-section {
+            padding: 50px 20px;
+            text-align: center;
+            background: #FAEBD7;
+        }
+        .event {
+            margin: 20px auto;
+            padding: 50px;
+            border-radius: 10px;
+            color: white;
+            max-width: 80%;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+        .event:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .event:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .event-text {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+            position: relative;
+            z-index: 2;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .event iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+
+        /* Send Wishes Section */
+
+        .wishes-section {
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #f7c8d8, #e2a5ab);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .wishes-section textarea {
+            width: 80%;
+            max-width: 600px;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .wishes-section button {
+            background-color: #5a3e2b;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;	
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .wishes-section button:hover {
+            background-color: #3e2a1f;
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        .contact {
+            padding: 30px 20px;
+            background: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .menu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+        .menu button {
+            background: none;
+            border: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .nav-links {
+            background: rgba(0, 0, 0, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: left 0.3s ease-in-out;
+            z-index: 101;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 15px;
+            display: block;
+        }
+        .nav-links.active {
+            left: 0;
+        }
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sparkling Effect -->
+    <div class="sparkling-background" id="sparkles"></div>
+
+    <!-- Hamburger Menu -->
+    <div class="menu">
+        <button onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="nav-links" id="nav">
+        <span class="close-menu" onclick="toggleMenu()">✖</span>
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#events" onclick="toggleMenu()">Events</a>
+        <a href="#wishes" onclick="toggleMenu()">Send Your Blessings</a>
+        <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+    </div>
+
+
+    <div class="header" id="home">
+        <div class="overlay"></div>
+        <h1 class="wedding-title"> The Grand Celebration of</h1>
+        <h2>Parag & Sakshi</h2>
+    <p class="wedding-tagline">"Two hearts, one journey, infinite love!" 💖</p>
+        <div class="countdown" id="countdown">Loading countdown...</div>
+    </div>
+  
+    <!-- Events Section -->
+    <div class="event-section" id="events">
+        <h2>🎊 Let the Festivities Begin! 🎊</h2>
+<p>Join us as we create memories that last a lifetime!</p>
+        <div class="event" style="background: url('sangeet-bg.jpg') no-repeat center center/cover;">
+            
+            <div class="event-text">
+                <b>Lagan with Beats</b> - 19th Feb 2025<br/> <b>Venue:</b> SportsBuzz, Vijay Nagar Agra <br/> <b>Timing:</b> 7 PM Onwards
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56785.931084909476!2d77.97503191953119!3d27.183943200076005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397471b7fbe0cac1%3A0xc0aad22a3e56c7a0!2sSportBuzz!5e0!3m2!1sen!2sin!4v1738263439097!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="event" style="background: url('haldi-bg.jpg') no-repeat center center/cover;">
+            <div class="event-text">
+                <b>Haldi</b> - 21st Feb 2025<br/> <b>Venue:</b> The Ramana Grand <br/> <b>Timing:</b> 11 AM Onwards<br/> <b> Dress Code:</b> Powder Blue
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.7579436339392!2d78.00613587402951!3d27.163905149253218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397477ffff921659%3A0xa7691d1eba8f9671!2sTHE%20RAMANA%20GRAND!5e0!3m2!1sen!2sin!4v1738263190766!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="event" style="background: url('haldi-bg.jpg') no-repeat center center/cover;">
+            <div class="event-text">
+                <b>Big Day</b> - 21st Feb 2025<br/> <b>Venue:</b> The Ramana Grand <br/> <b>Timing:</b> 11 AM Onwards                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.7579436339392!2d78.00613587402951!3d27.163905149253218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397477ffff921659%3A0xa7691d1eba8f9671!2sTHE%20RAMANA%20GRAND!5e0!3m2!1sen!2sin!4v1738263190766!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Your Blessings Section -->
+    <div class="wishes-section" id="wishes">
+        <h2>💌 Send Your Love & Blessings 💌</h2>
+<p>Your heartfelt wishes make our day even more special! Drop a sweet message below! ❤️</p>
+        <textarea id="wishMessage" placeholder="Type your wishes here..." onkeyup="enableSendButton()"></textarea>
+        <button id="sendWishBtn" onclick="sendWish()">Send Blessings</button>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <h3>Contact Us</h3>
+        <p>Vijay Goyal | 9319135896</p>
+        <p>23 Arsh City Yamunavihar Phase-2</p>
+        <p>Karamyogi Kamlanagar Agra</p>
+    </div>
+
+    <script>
+
+        // Toggle menu for responsive navigation
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+
+        // Countdown timer logic
+        const countdownDate = new Date("Feb 19, 2025 19:00:00").getTime();
+        const countdownElement = document.getElementById("countdown");
+
+        setInterval(function() {
+            let now = new Date().getTime();
+            let distance = countdownDate - now;
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }, 1000);
+
+        // Enable Send Wish Button if there is text
+        function enableSendButton() {
+            const wishMessage = document.getElementById("wishMessage").value;
+            const sendWishBtn = document.getElementById("sendWishBtn");
+            sendWishBtn.disabled = !wishMessage.trim();
+        }
+
+        // Send wish and display alert if input is empty
+        function sendWish() {
+            const wishMessage = document.getElementById("wishMessage").value;
+            if (!wishMessage.trim()) {
+                alert("Please add your wish before sending.");
+            } else {
+                // Send wish to WhatsApp (you can change the phone number)
+                const whatsappMessage = encodeURIComponent(wishMessage);
+                const whatsappLink = `https://wa.me/919634015817?text=${whatsappMessage}`;
+                window.open(whatsappLink, "_blank");
+
+                // Refresh page after sending message
+                alert("Your wish has been sent! Thank you for your blessings.");
+                document.getElementById("wishMessage").value = ''; // Clear the message
+                setTimeout(function() {
+                    location.reload();
+                }, 1000);
+            }
+        }
+
+       function createContinuousSparkles() {
+    setInterval(() => {
+        const sparkle = document.createElement("div");
+        sparkle.classList.add("sparkle");
+        sparkle.style.width = Math.random() * 8 + "px";
+        sparkle.style.height = sparkle.style.width;
+        sparkle.style.top = Math.random() * window.innerHeight + "px";
+        sparkle.style.left = Math.random() * window.innerWidth + "px";
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => {
+            sparkle.remove(); // Remove after animation to avoid performance issues
+        }, 2000);
+    }, 100);
+}
+
+createContinuousSparkles();  // Keep sparkles appearing forever
+
+
+
+    </script>
+
+</body>
+</html>
